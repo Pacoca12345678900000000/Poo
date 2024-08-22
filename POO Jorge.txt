@@ -1,0 +1,106 @@
+public class Moto extends Veiculos {
+    private boolean temCarenagem;
+    private String presença;
+    private String ausencia;
+    
+    
+    public boolean calcularCustoManutencao() {
+        if (temCarenagem) {
+            System.out.println("Custo de manutenção com carenagem: 500R$");
+        } else {
+            System.out.println("Custo de manutenção sem carenagem: 300R$");
+        }
+        return temCarenagem;
+    }
+
+
+    public void setPresença(String presença) {
+        this.presença = presença;
+    }
+
+    public void setAusencia(String ausencia) {
+        this.ausencia = ausencia;
+    }
+
+    public void setTemCarenagem(boolean temCarenagem) {
+        this.temCarenagem = temCarenagem;
+    }
+
+
+    public String getPresença() {
+        return presença;
+    }
+
+    public String getAusencia() {
+        return ausencia;
+    }
+    public String descricao() {
+        if (temCarenagem) {
+            return "Moto com carenagem";
+        } else {
+            return "Moto sem carenagem";
+        }
+    }
+}
+
+
+
+
+
+
+public class Moto extends Veiculos{
+    private boolean temCarenagem;
+    private string presença;
+    private string ausencia;
+    
+    public boolean calcularCustoManutençao(String presença, String ausencia){
+
+
+    public void setPresença(String presença){
+        this.presença = presença;
+    }
+
+    public void setAusencia(String ausencia){
+        this.ausencia = ausencia;
+    }
+
+  
+
+    public void setComPresença(boolean comAnoPresença){
+    try{
+        System.out.println(+500R$);
+        this.comAnoPresença = comAnoPresença;
+        }
+    catch(ArrayIndexOutOfBoundsException ex){
+        System.out.println("Se nao tem presença de carenagem o valor muda para 300");
+     }
+    }
+
+    public void setComAusencia(boolean comAnoAusencia){
+    try{
+        System.out.println(+300R$);
+        this.comAnoAusencia = comAnoAusencia;
+        }
+    catch(ArrayIndexOutOfBoundsException ex){
+        System.out.println("Se tem presença de carenagem o valor muda para 500");
+     }
+    }
+
+
+
+
+    public String getPresença(String presença){
+        return  presença;
+    }
+
+    public int getAusencia(int ausencia){
+        return  ausencia;
+    }
+
+
+    public boolean calcularCustoManutencao(String presença, String ausencia);
+    public String descricao(boolean setComPresença);
+    public String descricao(boolean setComAusencia);
+
+}
+}
